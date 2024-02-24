@@ -47,7 +47,7 @@ function Guess(num){
     if(random == num){
         document.getElementById(`cup${random}`).style = "opacity:0";
         let cup = document.getElementById(`cup${random}`).getBoundingClientRect();
-        ball.style = `top:${cup.top+100}px;left:${cup.left+32}px;display:block`;
+        ball.style = `top:${cup.top+50}px;left:${cup.left+32}px;display:block`;
         {
         result.style = "display:grid";
         document.getElementsByTagName('h2')[0].innerHTML=`Thats great XD`;
