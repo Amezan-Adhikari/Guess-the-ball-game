@@ -8,6 +8,7 @@ let isAnswerLocked = false;
 let nowGuess=false;
 let random;
 let playAgain =false;
+let Score = 0;
 
 function cupclicked(id){
     if(nowGuess){
@@ -50,7 +51,8 @@ function Guess(num){
         ball.style = `top:${cup.top+50}px;left:${cup.left+40}px;display:block`;
         {
         result.style = "display:grid";
-        document.getElementsByTagName('h2')[0].innerHTML=`Thats great XD`;
+        Score++;
+        document.getElementsByTagName('h2')[0].innerHTML=`Thats great, Score: ${Score}`;
         document.getElementsByTagName('button')[2].innerHTML='Play';
         playAgain=true;
         }
