@@ -47,7 +47,7 @@ function Guess(num){
     if(random == num){
         document.getElementById(`cup${random}`).style = "opacity:0";
         let cup = document.getElementById(`cup${random}`).getBoundingClientRect();
-        ball.style = `top:${cup.top+50}px;left:${cup.left+16}px;display:block`;
+        ball.style = `top:${cup.top+50}px;left:${cup.left+40}px;display:block`;
         {
         result.style = "display:grid";
         document.getElementsByTagName('h2')[0].innerHTML=`Thats great XD`;
@@ -59,7 +59,7 @@ function Guess(num){
         for(let i=1;i<=3;i++){
         document.getElementById(`cup${i}`).style = "opacity:0.4";}
         let cup = document.getElementById(`cup${random}`).getBoundingClientRect();
-        ball.style = `top:${cup.top+50}px;left:${cup.left+16}px;display:block`;
+        ball.style = `top:${cup.top+50}px;left:${cup.left+40}px;display:block`;
         isAnswerLocked=true;
         setTimeout(()=>
         {
