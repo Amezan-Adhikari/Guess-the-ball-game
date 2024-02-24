@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <img src="papercup.png" class="cup" id="cup1" onclick="cupclicked(1)">
+        <img src="papercup.png" class="cup" id="cup2" onclick="cupclicked(2)">
+        <img src="papercup.png" class="cup" id="cup3" onclick="cupclicked(3)">
+        <img src="ball.png" id="ball">
+        <div id="buttons">
+        <button onclick="Shuffle()" id="Shuffle" disabled>Shuffle</button>
+        <button onclick="lockAnswer()" id="LockPosition" disabled>LockPosition</button>
+        </div>
+
+        <div id="result">
+            <div id="resultTab">
+                <h2>Guess a Cup</h2>
+                <button onclick="guessNow()">Guess</button>
+                
+            </div>
+        </div>
+    </div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
